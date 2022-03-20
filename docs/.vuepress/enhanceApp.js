@@ -1,6 +1,7 @@
 import ElementUI from "element-ui";
 import 'animate.css';
 import "element-ui/lib/theme-chalk/index.css";
+// import './public/js/sakura.js';
 
 export default ({
   Vue, // VuePress 正在使用的 Vue 构造函数

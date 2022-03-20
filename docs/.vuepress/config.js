@@ -1,12 +1,12 @@
 module.exports = {
-  title: 'Hello, I\'m wangxinleo!',
-  base: '/blog/',
+  title: 'wangxinleo.cn',
+  base: '/',
   shouldPrefetch: () => false,
   description: '前端工程师 | node工程师 | Linux爱好者 | github爱好者',
   themeConfig: {
-    // logo: '/assets/img/logo.png',
+    logo: '/assets/img/logo.png',
     // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
-    repo: 'wangxinleo/wecode-blog',
+    repo: 'wangxinleo/wangxinleo-index',
     // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
     // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
     repoLabel: 'Github',
@@ -18,14 +18,14 @@ module.exports = {
     // 假如文档不是放在仓库的根目录下：
     docsDir: 'docs',
     // 假如文档放在一个特定的分支下：
-    docsBranch: 'ebook-sourcecode',
+    docsBranch: 'source_code',
     // 默认是 false, 设置为 true 来启用
     editLinks: true,
     // 默认为 "Edit this page"
     editLinkText: '帮coco改善此页面！',
     nav: [
       { text: '关于我', link: '/' },
-      // { text: '我的博客', link: '/vue-blog/' },
+      { text: '我的博客', link: '/blog/' },
       // { text: '我的项目', link: '/vue-blog/' },
     ],
     sidebar: {
@@ -34,7 +34,7 @@ module.exports = {
           title: '前言',
           collapsable: false,
           children: [
-            '/blog/0.md'
+            '/blog/README.md'
           ]
         }, {
           title: '第一部分 Vue快速入门',

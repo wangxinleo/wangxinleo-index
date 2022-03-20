@@ -1,8 +1,11 @@
 ---
 home: true
-heroImage: 
-actionText: 
-actionLink: 
+
+indexImage:
+indexAlt:
+
+indexText: Hello, I'm wangxinleo!
+tagline: 前端工程师 | node工程师 | Linux爱好者 | github爱好者
 
 socialLink:
   - type: github
@@ -11,6 +14,9 @@ socialLink:
   - type: gitee
     icon: <svg t="1647688758079" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4430" width="50" height="50"><path d="M512 1024C229.248 1024 0 794.752 0 512S229.248 0 512 0s512 229.248 512 512-229.248 512-512 512z m259.168-568.896h-290.752a25.28 25.28 0 0 0-25.28 25.28l-0.032 63.232c0 13.952 11.296 25.28 25.28 25.28h177.024a25.28 25.28 0 0 1 25.28 25.28v12.64a75.84 75.84 0 0 1-75.84 75.84h-240.224a25.28 25.28 0 0 1-25.28-25.28v-240.192a75.84 75.84 0 0 1 75.84-75.84h353.92a25.28 25.28 0 0 0 25.28-25.28l0.064-63.2a25.312 25.312 0 0 0-25.28-25.312H417.184a189.632 189.632 0 0 0-189.632 189.6v353.952c0 13.952 11.328 25.28 25.28 25.28h372.928a170.656 170.656 0 0 0 170.656-170.656v-145.376a25.28 25.28 0 0 0-25.28-25.28z" p-id="4431"></path></svg>
     link: https://gitee.com/wangxin_leo
+
+actionText:
+actionLink:
 
 features:
 - title: 关于我
@@ -27,49 +33,45 @@ productionTitle: 目前可公开的情报
 
 productions:
 - title: 个人博客
-  details: 不定时分享前端，算法，效率技巧，成长心得等
+  details: 🍹 🎸 划水、闲聊、摸鱼、发呆
+  technicalLines:
+  - javascript
+  - question
+  - blog
+  url: https://blog.wangxinleo.cn
+  
+- title: works-show
+  details: 🎪 🚅 一款简洁高效的VuePress 攻城狮主页&作品集锦 主题
   technicalLines:
   - javascript
   - node
   - vue
-  url: https://cn.vuejs.org/v2/guide/
+  url: 
   
-- title: 个人博客
-  details: 不定时分享前端，算法，效率技巧，成长心得等
+- title: fullcode-cli
+  details: 🍹 🎸 一个帮助你快速开发和搭建【全栈项目】的cli
   technicalLines:
   - javascript
   - npm
-  url: https://cn.vuejs.org/v2/guide/
-  
-- title: 个人博客
-  details: 不定时分享前端，算法，效率技巧，成长心得等
-  technicalLines:
-  - javascript
-  - npm
-  url: https://cn.vuejs.org/v2/guide/
+  url: https://github.com/wangxinleo/fullcode-cli
 
-- title: 个人博客
-  details: 不定时分享前端，算法，效率技巧，成长心得等
+- title: 我的第一次分享
+  details: 🍹 🎸 前端 element 课程学习的代码项目。
   technicalLines:
   - javascript
-  - npm
-  url: https://cn.vuejs.org/v2/guide/
+  - node
+  - vue
+  url: https://github.com/wangxinleo/practise-vue-shop-front
 
-- title: 个人博客
-  details: 不定时分享前端，算法，效率技巧，成长心得等
+- title: 造轮子系列
+  details: 一个小型 javascript 函数和类的集合，这些函数和类使开发过程变得更短、更容易。
   technicalLines:
+  - question
   - javascript
-  - npm
-  url: https://cn.vuejs.org/v2/guide/
-
-- title: 个人博客
-  details: 不定时分享前端，算法，效率技巧，成长心得等
-  technicalLines:
-  - javascript
-  - npm
-  url: https://cn.vuejs.org/v2/guide/
+  - question
+  url: https://github.com/wangxinleo/wecode-utils
   
 
-footer: MIT Licensed | Copyright ©2022-present WangXinLeo | <a href="http://beian.miit.gov.cn">粤ICP备19090939号</a>
+footer: MIT Licensed | Theme by <a>works-show</a> | Copyright ©2022-present WangXinLeo | <a href="http://beian.miit.gov.cn">粤ICP备19090939号</a>
 
 ---

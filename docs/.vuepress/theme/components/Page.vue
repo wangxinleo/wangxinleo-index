@@ -26,8 +26,9 @@
         <span class="prefix">{{ lastUpdatedText }}: </span>
         <span class="time">{{ lastUpdated }}</span>
       </div>
-      
-      <CopyRight style="margin-top: 30px;"></CopyRight>
+
+<!--      TODO:-->
+<!--      <CopyRight style="margin-top: 30px;"></CopyRight>-->
     </footer>
 
     <div class="page-nav" v-if="prev || next">

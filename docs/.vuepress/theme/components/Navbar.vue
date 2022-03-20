@@ -17,7 +17,7 @@
         class="site-name"
         v-if="$siteTitle"
         :class="{ 'can-hide': $site.themeConfig.logo }"
-      >{{ $site.themeConfig.navTitle || $siteTitle }}</span>
+      >{{ $siteTitle }}</span>
     </router-link>
 
     <div
@@ -26,11 +26,14 @@
         'max-width': linksWrapMaxWidth + 'px'
       } : {}"
     >
-      <AlgoliaSearchBox
-        v-if="isAlgoliaSearch"
-        :options="algolia"
-      />
-      <SearchBox v-else-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false"/>
+      <template v-if="showSearch">
+        <AlgoliaSearchBox
+            v-if="isAlgoliaSearch"
+            :options="algolia"
+        />
+
+        <SearchBox v-else-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false"/>
+      </template>
       <NavLinks class="can-hide"/>
     </div>
   </header>
@@ -41,14 +44,32 @@ import AlgoliaSearchBox from '@AlgoliaSearchBox'
 import SearchBox from '@SearchBox'
 import SidebarButton from '@theme/components/SidebarButton.vue'
 import NavLinks from '@theme/components/NavLinks.vue'
+import {startSakura, stopp} from '../../public/js/sakura'
 
 export default {
   components: { SidebarButton, NavLinks, SearchBox, AlgoliaSearchBox },
 
   data () {
     return {
-      linksWrapMaxWidth: null
+      linksWrapMaxWidth: null,
+      showSearch: true
     }
+  },
+  watch: {
+    "$route":{
+      handler(route){
+        const that = this;
+        if (route.path === '/' && that.showSearch) {
+          that.showSearch = false;
+          startSakura();
+        } else {
+          that.showSearch = true;
+          stopp();
+        }
+      },
+      immediate: true
+    }
+
   },
 
   mounted () {
@@ -73,6 +94,10 @@ export default {
 
     isAlgoliaSearch () {
       return this.algolia && this.algolia.apiKey && this.algolia.indexName
+    },
+
+    nowUrl () {
+      return window.location.pathname === $localePath;
     }
   }
 }
