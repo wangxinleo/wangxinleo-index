@@ -36,42 +36,8 @@ module.exports = {
           children: [
             '/blog/README.md'
           ]
-        }, {
-          title: '第一部分 Vue快速入门',
-          collapsable: false,
-          children: [
-            '/blog/1.md',
-            '/blog/2.md',
-            '/blog/3.md',
-            '/blog/4.md',
-            '/blog/5.md',
-            '/blog/6.md',
-            '/blog/7.md',
-            '/blog/8.md',
-          ]
-        }, {
-          title: '第二部分 Vue的正确使用方式',
-          collapsable: false,
-          children: [
-            '/blog/9.md',
-            '/blog/10.md',
-            '/blog/11.md',
-            '/blog/12.md',
-            '/blog/13.md',
-            '/blog/14.md',
-            '/blog/15.md',
-            '/blog/16.md',
-          ]
-        }, {
-          title: '后记',
-          collapsable: false,
-          children: [
-            '/blog/99.md',
-          ]
         }
       ],
     },
-    // 自定义属性
-    navTitle: 'wangxinleo',
   }
 }

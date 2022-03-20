@@ -2,11 +2,12 @@
   <div
       id="web-top"
       class="theme-container"
-      :class="pageClasses"
+      :class="[pageClasses, {'add-background-img': isShowBGImg}]"
       @touchstart="onTouchStart"
       @touchend="onTouchEnd"
   >
     <Navbar
+        :class="{'hide-background-and-border': isShowBGImg}"
         v-if="shouldShowNavbar"
         @toggle-sidebar="toggleSidebar"
     />
@@ -58,16 +59,33 @@ import Sidebar from '@theme/components/Sidebar.vue'
 import Kitty from '@theme/components/Kitty.vue'
 import BrowserNotes from "@theme/components/BrowserNotes.vue";
 import { resolveSidebarItems } from '../util'
+import {startSakura, stopp} from '@theme/util/sakura.js'
 
 export default {
   components: { Home, Page, Sidebar, Navbar, Kitty, BrowserNotes },
 
   data () {
     return {
-      isSidebarOpen: false
+      isSidebarOpen: false,
+      isShowBGImg: false
     }
   },
+  watch: {
+    "$route":{
+      handler(route){
+        const that = this
+        if (route.path === '/') {
+          that.isShowBGImg = true;
+          startSakura();
+        } else {
+          that.isShowBGImg = false;
+          stopp();
+        }
+      },
+      immediate: true
+    }
 
+  },
   computed: {
     shouldShowNavbar () {
       const { themeConfig } = this.$site
@@ -151,4 +169,14 @@ export default {
 }
 </script>
 
-<style src="prismjs/themes/prism-tomorrow.css"></style>
+<style src="prismjs/themes/prism-tomorrow.css" ></style>
+
+<style lang="stylus">
+.add-background-img
+  background url('https://s2.loli.net/2022/03/20/JhCGuHQedrxYzB5.jpg') no-repeat
+  background-size 100%
+  background-attachment fixed
+.hide-background-and-border
+  background-color unset
+  border-bottom unset
+</style>

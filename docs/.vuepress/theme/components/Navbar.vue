@@ -44,7 +44,6 @@ import AlgoliaSearchBox from '@AlgoliaSearchBox'
 import SearchBox from '@SearchBox'
 import SidebarButton from '@theme/components/SidebarButton.vue'
 import NavLinks from '@theme/components/NavLinks.vue'
-import {startSakura, stopp} from '../../public/js/sakura'
 
 export default {
   components: { SidebarButton, NavLinks, SearchBox, AlgoliaSearchBox },
@@ -59,13 +58,7 @@ export default {
     "$route":{
       handler(route){
         const that = this;
-        if (route.path === '/' && that.showSearch) {
-          that.showSearch = false;
-          startSakura();
-        } else {
-          that.showSearch = true;
-          stopp();
-        }
+        that.showSearch = route.path !== '/';
       },
       immediate: true
     }

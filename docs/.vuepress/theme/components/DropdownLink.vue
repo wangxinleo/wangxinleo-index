@@ -168,7 +168,7 @@ export default {
       position absolute
       top 100%
       right 0
-      background-color #fff
+      background-color $backGroundColor
       padding 0.6rem 0
       border 1px solid #ddd
       border-bottom-color #ccc

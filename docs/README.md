@@ -23,9 +23,9 @@ features:
   details: 
   - 我是一个对技术充满兴趣的小程序员。擅长<b>JavaScript</b>和 <b>nodejs</b>
   - 除了我的本职工作外
-  - 我还对<b>docker</b>，<b>机器学习</b>，<b>自动化</b>等感兴趣
+  - 我还对<b>docker</b>，<b>自动化</b>等感兴趣
   - 目前就职于<b>某基金公司</b>
-  - <b>如果你是老板，并且对我比较感兴趣，想带我走，这里有我的简历</b>
+  - <b>如果你是老板，并且对我比较感兴趣，想带我走，这里有我的<a href='mailto:wangxin.leo@outlook.com'>邮箱</a></b>
   - type: emoji 
     content: \ (•◡•) /
 
