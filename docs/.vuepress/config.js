@@ -1,4 +1,14 @@
 module.exports = {
+  head: [
+    [
+      'link', // 设置 favicon.ico，注意图片放在 public 文件夹下
+      {rel: 'icon', href: '/assets/img/logo.png'}
+    ],
+    [
+      'script', // js 文件
+      {src: '/assets/js/sakura.js'}
+    ]
+  ],
   title: 'wangxinleo.cn',
   base: '/',
   shouldPrefetch: () => false,
@@ -24,8 +34,8 @@ module.exports = {
     // 默认为 "Edit this page"
     editLinkText: '帮coco改善此页面！',
     nav: [
-      { text: '关于我', link: '/' },
-      { text: '我的博客', link: '/blog/' },
+      {text: '关于我', link: '/'},
+      // { text: '我的博客', link: '/blog/' },
       // { text: '我的项目', link: '/vue-blog/' },
     ],
     sidebar: {
@@ -34,10 +44,16 @@ module.exports = {
           title: '前言',
           collapsable: false,
           children: [
-            '/blog/README.md'
+            {title: 'items01', path: '/blog/'}
           ]
         }
       ],
     },
-  }
+  },
+  plugins: [
+    ['@vuepress/search', {
+      searchMaxSuggestions: 10
+    }]
+  ]
+
 }

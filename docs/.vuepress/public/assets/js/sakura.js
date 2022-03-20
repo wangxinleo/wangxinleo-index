@@ -97,7 +97,7 @@ function getRandom(option) {
   return ret;
 }
 
-function startSakura() {
+window.startSakura = function () {
   requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || window.oRequestAnimationFrame;
   var canvas = document.createElement('canvas'), cxt;
   staticx = true;
@@ -133,8 +133,16 @@ window.onresize = function () {
   var canvasSnow = document.getElementById('canvas_snow');
 }
 
-// img.onload = function () { startSakura(); }
-function stopp() {
+img.onload = function () {
+  // startSakura();
+  // window.startSakura = function () {
+  //   return startSakura();
+  // }
+  // window.stopp = function () {
+  //   return stopp();
+  // }
+}
+window.stopp = function () {
   if (staticx) {
     var child = document.getElementById("canvas_sakura");
     child.parentNode.removeChild(child);
@@ -144,5 +152,3 @@ function stopp() {
     // startSakura();
   }
 }
-
-module.exports = {startSakura, stopp}

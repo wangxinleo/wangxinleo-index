@@ -59,7 +59,7 @@ import Sidebar from '@theme/components/Sidebar.vue'
 import Kitty from '@theme/components/Kitty.vue'
 import BrowserNotes from "@theme/components/BrowserNotes.vue";
 import { resolveSidebarItems } from '../util'
-import {startSakura, stopp} from '@theme/util/sakura.js'
+// import {startSakura, stopp} from '@theme/util/sakura.js'
 
 export default {
   components: { Home, Page, Sidebar, Navbar, Kitty, BrowserNotes },
@@ -76,10 +76,10 @@ export default {
         const that = this
         if (route.path === '/') {
           that.isShowBGImg = true;
-          startSakura();
+          // window.startSakura();
         } else {
           that.isShowBGImg = false;
-          stopp();
+          // window.stopp();
         }
       },
       immediate: true
