@@ -3,13 +3,6 @@
 # 确保脚本抛出遇到的错误
 set -e
 
-git init
-git add -A
-git commit -m 'version: 1.0.0'
-git remote add origin https://github.com/wangxinleo/wangxinleo-index.git
-
-
-
 # 生成静态文件
 npm run docs:build
 
