@@ -35,7 +35,7 @@ jobs:
           npm i
       - name: Build
         run: |
-          npm run build
+          npm run docs:build
           cp README.md docs/.vuepress/dist/
           cd docs/.vuepress/dist
       - name: Deploy
