@@ -116,9 +116,15 @@
               </div>
               <div class="production-url">
                 <template v-if="production.url">
-                  <router-link
-                      :to="production.url"
-                  >地址</router-link>
+                  <a
+                      :href="production.url"
+                      class="nav-link external"
+                      :target="isMailto(production.url) || isTel(production.url) ? null : '_blank'"
+                      :rel="isMailto(production.url) || isTel(production.url) ? null : 'noopener noreferrer'"
+                  >
+                    地址
+                    <OutboundLink/>
+                  </a>
                 </template>
                 <template v-else>
                   <span style="height: 1rem"></span>
@@ -148,6 +154,7 @@
 
 <script>
 import NavLink from '@theme/components/NavLink.vue'
+import { isExternal, isMailto, isTel } from '../util'
 import BrowserNotes from "./BrowserNotes";
 import ArrowDown from "./ArrowDown";
 import ScrollTop from "./ScrollTop";
@@ -178,6 +185,11 @@ export default {
       }
     }
 
+  },
+  methods:{
+    isExternal,
+    isMailto,
+    isTel
   }
 }
 </script>

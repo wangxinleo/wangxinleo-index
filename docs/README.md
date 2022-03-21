@@ -72,6 +72,6 @@ productions:
   url: https://github.com/wangxinleo/wecode-utils
   
 
-footer: MIT Licensed | Theme by <a>works-show</a> | Copyright ©2022-present WangXinLeo | <a href="http://beian.miit.gov.cn">粤ICP备19090939号</a>
+footer: MIT Licensed | Theme by <a>works-show</a> | Copyright ©2022-present WangXinLeo | <a href="http://beian.miit.gov.cn" target="_blank">粤ICP备19090939号</a>
 
 ---
