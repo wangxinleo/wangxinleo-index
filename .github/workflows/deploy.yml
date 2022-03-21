@@ -21,8 +21,11 @@ jobs:
         node-version: [14.x]
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
         with:
+          # 创建token：头像 > Settings > Developer settings > Personal access tokens > Generate new token 权限至少要勾选repo
+          # 创建secrets： 源码仓库下 > Settings > Secrets， 创建DEPLOY_TOKEN， 填写刚创建的token，
           repo-token: ${{ secrets.DEPLOY_TOKEN }}
 
       - name: Use Node.js ${{ matrix.node-version }}
