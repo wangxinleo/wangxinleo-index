@@ -7,7 +7,6 @@
       @touchend="onTouchEnd"
   >
     <Navbar
-        :class="{'hide-background-and-border': isShowBGImg}"
         v-if="shouldShowNavbar"
         @toggle-sidebar="toggleSidebar"
     />
@@ -176,7 +175,4 @@ export default {
   background url('https://s2.loli.net/2022/03/20/JhCGuHQedrxYzB5.jpg') no-repeat
   background-size 100%
   background-attachment fixed
-.hide-background-and-border
-  background-color unset
-  border-bottom unset
 </style>

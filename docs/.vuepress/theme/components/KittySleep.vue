@@ -61,7 +61,7 @@ export default {};
   height: 4px;
   width: 80px;
   border-radius: 4px;
-  background-color: #3eaf7c;
+  background-color: #dc552c;
   z-index: 2;
 }
 .kitty-main .cat {
