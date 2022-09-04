@@ -36,8 +36,8 @@ module.exports = {
     editLinkText: '写得太烂了? 帮帮孩子!',
     nav: [
       {text: '关于我', link: '/'},
-      { text: '归档', link: '/blog/' },
-      { text: '小声bibi', link: '/bibi/' },
+      { text: '博文', link: '/blog/' },
+      { text: '微信推送', link: '/wx-push/' },
     ],
     sidebar: {
       '/blog/': [
@@ -45,14 +45,14 @@ module.exports = {
           title: '前言',
           path: '/blog/'
         },
-        {
-          title: '知识分享',
-          collapsable: true,
-          children: [
-            {title: '前端', path: '/blog/technologySharing/'},
-            {title: '网络', path: '/blog/technologySharing/'}
-          ]
-        },
+        // {
+        //   title: '知识分享',
+        //   collapsable: true,
+        //   children: [
+        //     {title: '前端', path: '/blog/technologySharing/'},
+        //     {title: '网络', path: '/blog/technologySharing/'}
+        //   ]
+        // },
         {
           title: '团队管理',
           collapsable: true,
@@ -88,6 +88,10 @@ module.exports = {
               path: '/blog/business/commit.md'
             },
           ]
+        },
+        {
+          title: '不吐不快',
+          path: '/bibi/'
         },
       ],
       '/bibi/': ['']
