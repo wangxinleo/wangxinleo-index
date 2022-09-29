@@ -1,4 +1,4 @@
-# ES 基础知识
+# ES6 基础知识
 
 JavaScript 是 ECMAScript 规范的一种实现
 
@@ -894,8 +894,6 @@ for (let [key, value] of map.entries()) {
 当然还有其他概念，如`catch`、 `Promise.all/race`，这里就不展开了。
 
 
-关于 ES6/7 的考查内容还有很多，本小节就不逐一介绍了，如果想继续深入学习，可以在线看《[ES6入门](http://es6.ruanyifeng.com/)》。
+## 参考资料
 
-## 小结
-
-本小节主要总结了 ES 基础语法中面试经常考查的知识点，包括之前就考查较多的原型、异步、作用域，以及 ES6 的一些新内容，这些知识点希望大家都要掌握。
+[阮一峰ES6](http://es6.ruanyifeng.com/)》。

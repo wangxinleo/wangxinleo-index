@@ -46,13 +46,43 @@ module.exports = {
           path: '/front/'
         },
         {
-          title: '前端入门',
+          title: '前端与工作',
           collapsable: false,
           children: [
             {
-              title: 'ES 基础知识', 
+              title: '1. ES基础知识', 
               sidebarDepth: 2,
               path: '/front/technologySharing/'
+            },
+            {
+              title: '2. JS-Web-API基础知识', 
+              sidebarDepth: 2,
+              path: '/front/technologySharing/js-web-api.md'
+            },
+            {
+              title: '3. CSS-HTML基础知识', 
+              sidebarDepth: 2,
+              path: '/front/technologySharing/css-html.md'
+            },
+            {
+              title: '4. 浏览器基础知识', 
+              sidebarDepth: 2,
+              path: '/front/technologySharing/web.md'
+            },
+            {
+              title: '5. 算法基础', 
+              sidebarDepth: 2,
+              path: '/front/technologySharing/algorithm.md'
+            },
+            {
+              title: '6. 代码之外的软技能', 
+              sidebarDepth: 2,
+              path: '/front/technologySharing/soft-skills.md'
+            },
+            {
+              title: '7. 项目经验分析', 
+              sidebarDepth: 2,
+              path: '/front/technologySharing/poject-analyse.md'
             },
           ]
         },
@@ -72,37 +102,14 @@ module.exports = {
             },
           ]
         },
-        // {
-        //   title: '事故复盘',
-        //   collapsable: true,
-        //   children: [
-        //     {title: 'items01', path: '/blog/'}
-        //   ]
-        // },
-        // {
-        //   title: '问题排查',
-        //   collapsable: true,
-        //   children: [
-        //     {title: 'items01', path: '/blog/'}
-        //   ]
-        // },
-        // {
-        //   title: '业务总结',
-        //   collapsable: true,
-        //   children: [
-        //     {
-        //       title: '团队Git规范',
-        //       sidebarDepth: 2,
-        //       path: '/blog/business/commit.md'
-        //     },
-        //   ]
-        // },
-        // {
-        //   title: '不吐不快',
-        //   path: '/bibi/'
-        // },
       ],
-      '/have-fun/': ['wx-push']
+      '/have-fun/': [
+        {
+          title: '消息推送',
+          collapsable: true,
+          path: '/have-fun/wx-push.md'
+        },
+      ]
     },
   },
   plugins: [
