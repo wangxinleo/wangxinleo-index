@@ -27,8 +27,7 @@
         <span class="time">{{ lastUpdated }}</span>
       </div>
 
-<!--      TODO:-->
-<!--      <CopyRight style="margin-top: 30px;"></CopyRight>-->
+     <CopyRight style="margin-top: 30px;"></CopyRight>
     </footer>
 
     <div class="page-nav" v-if="prev || next">

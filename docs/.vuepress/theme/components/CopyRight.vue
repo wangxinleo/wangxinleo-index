@@ -5,23 +5,13 @@
       <el-col :sm="24" :md="18" :lg="16">
         <el-card class="box-card">
           <div slot="header" class="clearfix">
-            <span>温馨提示喵</span>
+            <span>嘤嘤嘤…</span>
           </div>
           <el-row :gutter="20">
-            <el-col :xs="24" :sm="12">
-              <el-image :src="imgSrc">
-                <div slot="placeholder" class="image-slot">
-                  <img src="https://github-imglib-1255459943.cos.ap-chengdu.myqcloud.com/assets/img/loading.gif" style="width: 100%;" />
-                </div>
-                <div slot="error" class="image-slot">
-                  <img src="https://github-imglib-1255459943.cos.ap-chengdu.myqcloud.com/chunzhu.jpg" style="width: 100%;"  />
-                </div>
-              </el-image>
-            </el-col>
-            <el-col :xs="24" :sm="12">
+            <el-col :xs="24" :sm="24">
               <div class="copyright-text">
-                <div>本书采用“保持署名—非商用”<a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">创意共享4.0许可证</a>。只要保持原作者署名和非商用，您可以自由地阅读、分享、修改本书。</div>
-                <div>作者：<a href="https://github.com/godbasin" target="_blank">被删</a></div>
+                <div>都看到这里了，可以给个 <a href="https://github.com/wangxinleo/wangxinleo-index" target="_blank">star</a>⭐ 吗？</div>
+                <div>作者：<a href="https://github.com/wangxinleo" target="_blank">wangxinleo</a></div>
               </div>
             </el-col>
           </el-row>

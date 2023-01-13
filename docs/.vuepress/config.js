@@ -33,26 +33,59 @@ module.exports = {
     // 默认是 false, 设置为 true 来启用
     editLinks: true,
     // 默认为 "Edit this page"
-    editLinkText: '写得太烂了? 帮帮孩子!',
+    editLinkText: '写错了? 帮帮孩子!',
     nav: [
-      {text: '关于我', link: '/'},
-      { text: '博文', link: '/blog/' },
-      { text: '微信推送', link: '/wx-push/' },
+      {text: '首页', link: '/'},
+      { text: '前端领域', link: '/front/' },
+      { text: '小玩具', link: '/have-fun/' },
     ],
     sidebar: {
-      '/blog/': [
+      '/front/': [
         {
           title: '前言',
-          path: '/blog/'
+          path: '/front/'
         },
-        // {
-        //   title: '知识分享',
-        //   collapsable: true,
-        //   children: [
-        //     {title: '前端', path: '/blog/technologySharing/'},
-        //     {title: '网络', path: '/blog/technologySharing/'}
-        //   ]
-        // },
+        {
+          title: '前端与工作',
+          collapsable: false,
+          children: [
+            {
+              title: '1. ES基础知识', 
+              sidebarDepth: 2,
+              path: '/front/technologySharing/'
+            },
+            {
+              title: '2. JS-Web-API基础知识', 
+              sidebarDepth: 2,
+              path: '/front/technologySharing/js-web-api.md'
+            },
+            {
+              title: '3. CSS-HTML基础知识', 
+              sidebarDepth: 2,
+              path: '/front/technologySharing/css-html.md'
+            },
+            {
+              title: '4. 浏览器基础知识', 
+              sidebarDepth: 2,
+              path: '/front/technologySharing/web.md'
+            },
+            {
+              title: '5. 算法基础', 
+              sidebarDepth: 2,
+              path: '/front/technologySharing/algorithm.md'
+            },
+            {
+              title: '6. 代码之外的软技能', 
+              sidebarDepth: 2,
+              path: '/front/technologySharing/soft-skills.md'
+            },
+            {
+              title: '7. 项目经验分析', 
+              sidebarDepth: 2,
+              path: '/front/technologySharing/poject-analyse.md'
+            },
+          ]
+        },
         {
           title: '团队管理',
           collapsable: true,
@@ -60,41 +93,23 @@ module.exports = {
             {
               title: '前端业务团队如何进行技术建设',
               sidebarDepth: 2,
-              path: '/blog/specification/management.md'
-            }
-          ]
-        },
-        // {
-        //   title: '事故复盘',
-        //   collapsable: true,
-        //   children: [
-        //     {title: 'items01', path: '/blog/'}
-        //   ]
-        // },
-        // {
-        //   title: '问题排查',
-        //   collapsable: true,
-        //   children: [
-        //     {title: 'items01', path: '/blog/'}
-        //   ]
-        // },
-        {
-          title: '业务总结',
-          collapsable: true,
-          children: [
+              path: '/front/specification/management.md'
+            },
             {
               title: '团队Git规范',
               sidebarDepth: 2,
-              path: '/blog/business/commit.md'
+              path: '/front/specification/commit.md'
             },
           ]
         },
-        {
-          title: '不吐不快',
-          path: '/bibi/'
-        },
       ],
-      '/bibi/': ['']
+      '/have-fun/': [
+        {
+          title: '消息推送',
+          collapsable: true,
+          path: '/have-fun/wx-push.md'
+        },
+      ]
     },
   },
   plugins: [

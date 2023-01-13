@@ -148,7 +148,8 @@
       v-html="data.footer"
     ></div>
 
-    <ScrollTop :to="'web-top'"></ScrollTop>
+    <!-- <ScrollTop :to="'web-top'"></ScrollTop> -->
+    <el-backtop><KittyTop></KittyTop></el-backtop>
   </main>
 </template>
 
@@ -158,9 +159,10 @@ import { isExternal, isMailto, isTel } from '../util'
 import BrowserNotes from "./BrowserNotes";
 import ArrowDown from "./ArrowDown";
 import ScrollTop from "./ScrollTop";
+import KittyTop from "./KittyTop.vue";
 
 export default {
-  components: { NavLink, BrowserNotes, ArrowDown, ScrollTop },
+  components: { NavLink, BrowserNotes, ArrowDown, ScrollTop, KittyTop },
 
   computed: {
     data () {

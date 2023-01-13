@@ -32,13 +32,6 @@ features:
 productionTitle: 目前可公开的情报
 
 productions:
-- title: 个人博客
-  details: 🍹 🎸 划水、闲聊、摸鱼、发呆
-  technicalLines:
-  - javascript
-  - question
-  - blog
-  url: https://blog.wangxinleo.cn
   
 - title: works-show
   details: 🎪 🚅 一款简洁高效的VuePress 攻城狮主页&作品集锦 主题
@@ -63,13 +56,12 @@ productions:
   - vue
   url: https://github.com/wangxinleo/practise-vue-shop-front
 
-- title: 造轮子系列
-  details: 一个小型 javascript 函数和类的集合，这些函数和类使开发过程变得更短、更容易。
+- title: 微信模板消息推送脚本
+  details: 给生活加点小乐子
   technicalLines:
-  - question
   - javascript
-  - question
-  url: https://github.com/wangxinleo/wecode-utils
+  - node
+  url: https://github.com/wangxinleo/wechat-public-account-push
   
 
 footer: MIT Licensed | Theme by <a>works-show</a> | Copyright ©2022-present WangXinLeo | <a href="http://beian.miit.gov.cn" target="_blank">粤ICP备19090939号</a>

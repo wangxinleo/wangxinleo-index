@@ -1,6 +1,3 @@
----
-sidebar: auto
----
 
 <div align="center">
 
