@@ -36,7 +36,7 @@ module.exports = {
     editLinkText: '写错了? 帮帮孩子!',
     nav: [
       {text: '首页', link: '/'},
-      { text: '前端领域', link: '/front/' },
+      // { text: '前端领域', link: '/front/' },
       { text: '小玩具', link: '/have-fun/' },
     ],
     sidebar: {
