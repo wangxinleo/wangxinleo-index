@@ -10,7 +10,7 @@ module.exports = {
       {src: '/assets/js/sakura.js'}
     ]
   ],
-  title: 'wangxinleo.cn',
+  title: '日志分享',
   base: '/',
   shouldPrefetch: () => false,
   description: '前端工程师 | node工程师 | Linux爱好者 | Github爱好者',
